@@ -24,3 +24,11 @@ Data columns (total 5 columns):
 dtypes: int64(2), object(3)
 memory usage: 180.7+ KB
 None
+number of columns:  5
+
+column names:
+order_id
+quantity
+item_name
+choice_description
+item_price

@@ -28,7 +28,9 @@ class Solution:
     
     def print_columns(self) -> None:
         # Print the name of all the columns.
-        print(self.chipo.columns)
+        print ("\ncolumn names:")
+        for col in self.chipo.columns:
+            print(col)
     
     def most_ordered_item(self):
         res = self.chipo.groupby(['item_name'])\
@@ -77,12 +79,13 @@ class Solution:
         df = df.rename(columns={'index': 'item', 0: 'count'})
 
         # 2. sort the values from the top to the least value and slice the first 5 items
-        df = df.sort_values(by=['count'], ascending=False)[:5]
+        df = df.sort_values(by=['count'], ascending=False)[:x]
 
         # 3. create a 'bar' plot from the DataFrame
         items = df['item']
         counts = df['count']
-        plt.bar(items, counts)
+        plt.figure(figsize=(9, 4))
+        plt.bar(items, counts, width=0.4)
 
         # 4. set the title and labels:
         #     x: Items
@@ -131,13 +134,13 @@ def test() -> None:
     assert count == 4622
     solution.info()
     count = solution.num_column()
+    print("number of columns: ", count)
     assert count == 5
+    solution.print_columns()
     item_name, order_id, quantity = solution.most_ordered_item()
     assert item_name == 'Chicken Bowl'
     assert order_id == 713926
-    """
-    assert quantity == 159
-    """
+    assert quantity == 761  # modified from 159 due to incorrect problem context
     total = solution.total_item_orders()
     assert total == 4972
     assert 39237.02 == solution.total_sales()
