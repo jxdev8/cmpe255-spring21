@@ -1,0 +1,27 @@
+11914 lines loaded
+got subsets of data:  7150 2382 2382
+======== Training ========
+ engine_cylinders transmission_type     driven_wheels  number_of_doors    market_category vehicle_size      vehicle_style  highway_mpg  city_mpg  popularity  msrp  msrp_pred
+              4.0            manual front_wheel_drive              2.0                NaN      midsize              coupe           31        21        2031  9.90       9.54
+              4.0            manual front_wheel_drive              4.0          hatchback      compact      4dr_hatchback           39        31        1385  9.41       9.14
+              6.0            manual  four_wheel_drive              2.0                NaN      compact regular_cab_pickup           20        15         436  7.60       8.65
+              4.0            manual  rear_wheel_drive              3.0                NaN        large  passenger_minivan           18        16         873  7.60       8.68
+              6.0         automatic   all_wheel_drive              2.0 luxury,performance      midsize              coupe           27        18        1624 10.73      10.70
+======== Validation ========
+ engine_cylinders transmission_type     driven_wheels  number_of_doors              market_category vehicle_size   vehicle_style  highway_mpg  city_mpg  popularity  msrp  msrp_pred
+              6.0         automatic   all_wheel_drive              4.0                    crossover      midsize         4dr_suv           22        15         549 10.73      10.25
+              6.0         automatic front_wheel_drive              4.0                  performance      midsize           sedan           32        22        2009 10.39      10.37
+              8.0         automatic  rear_wheel_drive              2.0                  performance      midsize     convertible           22        16        5657 10.55       9.89
+              8.0         automatic  four_wheel_drive              4.0                          NaN        large crew_cab_pickup           22        16        1385 10.88      10.66
+              4.0         automatic front_wheel_drive              4.0 crossover,luxury,performance      midsize         4dr_suv           30        22         870 10.65      10.96
+======== Test ========
+ engine_cylinders transmission_type     driven_wheels  number_of_doors           market_category vehicle_size vehicle_style  highway_mpg  city_mpg  popularity  msrp  msrp_pred
+              8.0         automatic  four_wheel_drive              4.0        luxury,performance        large       4dr_suv           21        15        1624 11.32      11.25
+              4.0         automatic front_wheel_drive              4.0          hatchback,hybrid      compact 4dr_hatchback           50        54        2031 10.28       9.97
+              4.0         automatic front_wheel_drive              4.0                       NaN      midsize         sedan           41        31        2202  9.93       9.86
+              6.0         automatic  rear_wheel_drive              4.0 luxury,performance,hybrid      midsize         sedan           34        29         454 11.05      11.17
+              6.0            manual  rear_wheel_drive              2.0                       NaN      midsize       2dr_suv           20        15        5657  9.99       9.40
+
+Training rmse:  0.7478
+Validation rmse:  0.763
+Test rmse:  0.7559
