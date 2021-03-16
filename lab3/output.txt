@@ -1,0 +1,4 @@
+reading from local csv files..
+single digit prediction:  [ True] , actual digit:  5
+accuracy of test data predictions:  0.9492
+cross-val scores:  [0.95035 0.96035 0.9604 ]
