@@ -1,3 +1,5 @@
+# NOTE: My submission for this assignment is in https://github.com/jxdev8/cmpe255-submission/tree/main/assignment1 (as per instructed in our class).
+
 # Assignment 1
 
 In this assigment, you will be building models to predict house prices using the [Boston housing dataset](https://www.kaggle.com/vikrishnan/boston-house-prices).
