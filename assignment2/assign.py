@@ -1,3 +1,11 @@
+#
+# CMPE-255 / Spring 2021
+# Assignment #2
+# Date: 05/02/2021
+# Name: John Monsod
+# Student ID# 015234505
+#
+
 from sklearn.datasets import fetch_lfw_people
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
