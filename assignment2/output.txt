@@ -1,0 +1,29 @@
+Data has been loaded successfully, shape: (1348, 62, 47)
+num_samples (images): 1348
+image size: 62 x 47
+num_features: 2914
+target_names: ['Ariel Sharon' 'Colin Powell' 'Donald Rumsfeld' 'George W Bush'
+ 'Gerhard Schroeder' 'Hugo Chavez' 'Junichiro Koizumi' 'Tony Blair']
+
+Data has been split: training data=1078, test data=270
+
+GridSearch done, best estimator:
+Pipeline(steps=[('pca', PCA(n_components=150, random_state=42, whiten=True)),
+                ('svc', SVC(C=5, class_weight='balanced', gamma=0.005))])
+
+Classification Report:
+                   precision    recall  f1-score   support
+
+     Ariel Sharon       0.88      0.58      0.70        12
+     Colin Powell       0.86      0.84      0.85        51
+  Donald Rumsfeld       0.91      0.84      0.87        25
+    George W Bush       0.80      0.96      0.87        98
+Gerhard Schroeder       1.00      0.76      0.86        21
+      Hugo Chavez       1.00      0.67      0.80        15
+Junichiro Koizumi       1.00      0.70      0.82        10
+       Tony Blair       0.89      0.89      0.89        38
+
+         accuracy                           0.86       270
+        macro avg       0.92      0.78      0.83       270
+     weighted avg       0.87      0.86      0.86       270
+
